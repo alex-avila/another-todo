@@ -6,14 +6,32 @@
   "author": "alex-avila <alex.avilx@icloud.com>",
   "license": "MIT",
   "dependencies": {},
+  "scripts": {
+    "lint": "prettier --write \"**/*.{js,css}}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
+    "eslint": "^5.4.0",
     "express": "^4.16.3",
     "express-jwt": "^5.3.1",
+    "husky": "^1.0.0-rc.13",
     "jsonwebtoken": "^8.3.0",
+    "lint-staged": "^7.2.2",
     "mongoose": "^5.2.9",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "prettier": "^1.14.2"
   }
 }
