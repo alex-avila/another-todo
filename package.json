@@ -1,5 +1,12 @@
 {
-  "dependencies": {
+  "name": "another-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alex-avila/another-todo.git",
+  "author": "alex-avila <alex.avilx@icloud.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
