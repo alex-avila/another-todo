@@ -6,6 +6,17 @@
   "author": "alex-avila <alex.avilx@icloud.com>",
   "license": "MIT",
   "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
