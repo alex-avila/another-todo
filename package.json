@@ -6,6 +6,9 @@
   "author": "alex-avila <alex.avilx@icloud.com>",
   "license": "MIT",
   "dependencies": {},
+  "scripts": {
+    "lint": "prettier --write \"**/*.js\""
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
